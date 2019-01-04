@@ -1,0 +1,378 @@
+@import 'media-queries';
+$information-phone: "only screen and (max-width : 990px)";
+$information-photos: "only screen and (max-width : 700px)";
+.editPhotos{
+  width: 50%!important;
+  @media #{$information-photos} {
+    width: 100%!important;
+  }
+}
+#imgManoAnimacion{
+        position: absolute;
+    margin-left: -56px;
+    margin-top: 1px;
+    width: 134px;
+  
+}
+#imgBarraAnimacion{
+        position: absolute;
+    margin-left: -56px;
+    margin-top: 14px;
+    width: 134px;
+  
+}
+#animacion{
+     position: absolute;
+    /* top: 50px; */
+    margin-left: -12px;
+    margin-top: 108px;
+}
+.actividades{
+  margin-top: 7%;
+  color:white;
+  font-family:'BitsumisRegular';
+  @include respond-to($phone){
+    h1{
+      font-size: 2rem!important; 
+    }
+
+  }
+}
+.contenedoractividades{
+  @include respond-to($phone){
+    margin-top:18px;
+
+  }
+}
+
+#bgIndex{
+  background: #1c1c1c;
+  overflow-x: hidden;
+}
+
+.textoIndex{
+  color:white;
+  font-family:'MontserratRegular';
+
+  padding-bottom: 7%;
+  @include respond-to($phone){
+    font-size: 1rem;
+    text-align:justify!important;
+    // margin-top: 20px;
+  }
+
+
+}
+.cards{
+
+}
+
+.espaciado{
+  margin-top: 10px;
+}
+#slideshowactividades{
+ @include respond-to($phone){
+  margin-top: 72px;
+
+}
+}
+
+/*Colores del collapse del header*/  
+.estilo
+{
+  font-size:1.5rem;
+}    
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255,255,255,1);
+}
+
+
+
+section.range-slider {
+  margin-top: 187px;
+  position: relative;
+  width: 200px;
+  height: 5px;
+
+  @media #{$information-phone} {
+    margin-top: 12px;
+  }
+
+
+}
+// .centrarHorario{
+  //   // text-align:center;
+  //      height: 438px!important;
+  // }
+
+
+
+  section.range-slider input {
+    pointer-events: none;
+    position: absolute;
+    overflow: hidden;
+    left: -18px;
+    top: 15px;
+    width: 200px;
+    outline: none;
+    height: 6px;
+    margin: 0;
+    padding: 0;
+
+    margin-left: -3px;
+    @include respond-to($phone){
+      left:37px;
+      height: 15px;
+
+
+    }
+
+  }
+
+  section.range-slider input::-webkit-slider-thumb {
+   /*background:green!important;*/
+   pointer-events: all;
+   position: relative;
+   z-index: 1;
+   outline: 0;
+ }
+ @mixin scrollTrueY{
+   // width: 100%;
+
+   // margin-left: 0;
+   // background: #fff;
+   // float: left;
+   // overflow: scroll;
+   overflow-y: scroll;
+ }
+ @mixin scrollbar-style{
+  width:7px;
+  background:transparent;
+}
+ @mixin scrollbar-style-thumb{
+  background:#f76fd7;
+  border-radius: 5px;
+ }
+ @mixin activo{
+ height:448px !important;
+  display:none;
+  overflow-y: auto;
+ }
+ .scrollStyle{
+  overflow-y:auto!important;
+}
+.scrollStyle::-webkit-scrollbar{
+@include scrollbar-style;
+}
+.scrollStyle::-webkit-scrollbar-thumb {
+@include scrollbar-style-thumb;
+}
+
+
+
+
+#Activo8{
+  @include activo;
+}
+#Activo8::-webkit-scrollbar{
+@include scrollbar-style;
+}
+#Activo8::-webkit-scrollbar-thumb {
+@include scrollbar-style-thumb;
+}
+#Activo9{
+  @include activo;
+}
+#Activo10{
+  @include activo;
+}
+#Activo11{
+  @include activo;
+}
+#Activo12{
+@include activo;
+}
+#Activo13{
+  @include activo;
+}
+#Activo13::-webkit-scrollbar{
+@include scrollbar-style;
+}
+#Activo13::-webkit-scrollbar-thumb {
+@include scrollbar-style-thumb;
+}
+#Activo14{
+  @include activo;
+}
+#Activo15{
+  @include activo;
+}
+#Activo16{
+  @include activo;
+}
+
+
+body::-webkit-scrollbar{
+  width:10px;
+  background: transparent;
+}
+body::-webkit-scrollbar-thumb {
+
+  // top:20px;
+  background:#f76fd7;
+  border-radius: 5px;
+  // height: 100px;
+}
+
+.rangeValues{
+  margin-left: 30px;
+  padding-top: 35px;
+  // margin-left: 44px;
+  position: absolute;
+  /* margin-bottom: 107px; */
+  padding-bottom: 46px;
+  color: #141414;
+  @include respond-to($phone){
+    margin-left: 53px;
+
+  }
+
+
+}
+
+.cronogramatitulo{
+  background:#141414;
+  height: 100px;
+}
+
+.cronogramabarra{
+ background:#E3E3E3;
+ height: 500px;
+
+ @media #{$information-phone} {
+  height: 38rem;
+}
+}
+
+.cronogramatitulo h3{
+
+  font-family:'BitsumisRegular';
+  color: white;
+  margin-top:33px;
+
+  @include respond-to($phone){
+   margin-top:31px;
+
+ }
+
+}
+
+.bgsliders {
+  width: 100%;
+  height: 340px;
+  background: #333;
+  padding-top: 65px;
+  padding-bottom: 125px;
+  margin-top: 75px;
+  margin-bottom: 70px;
+
+  @media #{$information-phone} {
+    height: 290px;
+    padding-bottom: 25px;
+    margin-top: 60px; 
+    margin-bottom: 70px;
+  }
+}
+
+
+.bgSlider{
+  background:white;
+  height: 447px;  
+
+  @media #{$information-phone} {
+    height: 83px;
+    width: 100%;
+  }
+}
+
+.vacio{
+ background: white;
+ text-align: center;
+}
+.vacio h3{
+
+  margin-top: 35px;
+  font-family:'BitsumisRegular';
+  color: #1c1c1c;
+  @include respond-to($phone){
+   margin-top:7px;
+
+ }
+
+}
+
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  /*width: 100%;  Full-width */
+  height: 10px; /* Specified height */
+  background:rgba(81,81,81,0.3); /* Grey background */
+  outline: none; /* Remove outline */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  /*border-radius: 50%*/
+  background:#f76fd7; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+#inputslide1::-webkit-slider-thumb {
+  width: 50px; /* Set a specific slider handle width */
+}
+
+#inputslide2::-webkit-slider-thumb {
+  width: 0; /* Set a specific slider handle width */
+  background:transparent!important;
+}
+
+.carousel-indicators li{ 
+  border-radius: 50%;
+  height: 8px;
+  width: 8px; 
+  margin-top: 10px;
+}
+
+.indicadores{
+  top: 25vh!important;
+}
+
+.titlePage h1{
+  margin-bottom: 50px!important;
+
+  @media #{$information-phone} {
+    margin-bottom: 20px!important;
+  }
+}
+
+.carousel-indicators li:hover{
+  background: white;
+}
+
+.carousel-indicators .active{
+  background: white;
+}
+
+.carousel-control-next, .carousel-control-prev{
+  color:white!important;
+}
+
+.fond{
+  background: #E3E3E3;
+}

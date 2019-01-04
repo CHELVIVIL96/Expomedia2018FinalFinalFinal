@@ -1,0 +1,103 @@
+$color-white: #ffffff;
+$color-gray-light: #f5f5f5;
+$color-black: #000000;
+$color-dark: #333333;
+$color-gray:#ccc;
+$color-cian:#64ffda;
+$color-rose:rgba(247, 111, 215, 0.9);
+
+// 10px = 0.625rem
+// 12px = 0.75rem
+// 14px = 0.875rem
+// 16px = 1rem (base)
+// 18px = 1.125rem
+// 20px = 1.25rem
+// 24px = 1.5rem
+// 30px = 1.875rem
+// 32px = 2rem
+// 
+
+* {
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.card-people{
+  color:#fff;   
+  &:hover{
+    color: #ffeb3b !important; 
+    font-size: 20px; 
+}
+}
+
+.margin-20{
+    padding-top: 20px;
+    padding-button: 20px;
+}
+
+.card-padding-bottom{
+  margin-bottom: 20px;
+    @include respond-to($large-desktop){
+    margin-bottom: 40px;
+  }
+}
+
+
+a{
+    // font-size: 0.75rem;
+    font-family: 'MontserratRegular';
+}
+
+p{
+    // font-size: 0.75rem;
+    font-family: 'MontserratRegular';
+}
+
+
+h1,h5{
+    // font-size: 2rem;
+    font-family: 'BitsumisRegular';
+}
+
+h2{
+    // font-size: 1.875rem;
+    font-family: 'MontserratRegular';
+}
+
+
+.box{
+    width:300px;
+    height:300px;
+    background:pink;
+}
+
+.padding-box{
+   padding: 2rem 2rem;
+   @include respond-to($large-desktop) {
+      padding:4rem  2rem ;
+  }
+}
+
+.margen{
+   margin:auto;
+}
+
+
+.footer-dark{
+    ul{
+        li{
+            a{
+                text-decoration:none; 
+                i{
+                    color: $color-white;
+                    &:hover{
+                        color: $color-cian;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
